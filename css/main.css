@@ -70,6 +70,10 @@ table {
 	a .button {
 		font-size: 40%;
 	}
+	p {
+		font-size: 40%
+	}
+
 }
 
 @media (min-width: 380px) and (max-width: 450px) {
@@ -87,6 +91,9 @@ table {
 	}	
 	a .button {
 		font-size: 40%;
+	}
+	p {
+		font-size: 60%
 	}
 }
 
@@ -106,6 +113,9 @@ table {
 	a .button {
 		font-size: 50%;
 	}
+	p {
+		font-size: 70%
+	}
 }
 @media (min-width: 650px) {
 	#banner-text h1 {
@@ -123,6 +133,9 @@ table {
 	a .button {
 		font-size: 70%;
 	}
+	p {
+		font-size: 80%
+	}
 }
 
 /*=================================================*/
@@ -138,7 +151,6 @@ h1, h2, h3, h4, h5 {
 }
 p {
 	padding:10px;
-	font-size: x-large;
 	line-height: 200%;
 }
 body {

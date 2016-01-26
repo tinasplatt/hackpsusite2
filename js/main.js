@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     console.log( "ready!" );
-    $( "#header" ).css( "height", window.innerHeight);
+    // $( "#header" ).css( "height", window.innerHeight);
 
     var isMobile = true;
 
