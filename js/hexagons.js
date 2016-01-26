@@ -90,7 +90,7 @@ function animations(){
 		// timeout function for creating a hexagon on an interval
 	    setTimeout(function() {
 	    	var size = numberOfHexagons % 3 + 1;
-	        $( 'body' ).prepend($('<div>')
+	        $( '#header' ).prepend($('<div>')
 	        	.addClass('hexagon')
 	        	.prop('size', size)
 	        	.hexify(size)
@@ -115,11 +115,11 @@ function animations(){
 		$( '.hexagon' ).stop();
 
 		$( '.hexagon' ).each( function( index ) {
-			var currentPositionOfShape = $( this ).offset();
+			// var currentPositionOfShape = $( this ).offset();
 
-	 		if ( (currentPositionOfShape.left + $( this ).width() * 1.5) >= window.innerWidth ) {
-				$( this ).remove();
-			}
+	 	// 	if ( (currentPositionOfShape.left + $( this ).width() * 1.5) >= window.innerWidth ) {
+			// 	//$( this ).remove();
+			// }
 
 			$( "body" ).css( "width", window.innerWidth);
 
