@@ -17,7 +17,7 @@ $( document ).ready(function() {
 	}
     
 
-    $(".social-media-icon").hover(
+    $(".animated-icon").hover(
     	function() {
     		$(this).addClass('tada');
     	}, function() {

@@ -136,6 +136,11 @@ h1, h2, h3, h4, h5 {
 	white-space: nowrap;
 	font-size: larger;
 }
+p {
+	padding:10px;
+	font-size: x-large;
+	line-height: 200%;
+}
 body {
 	text-align: center;
 	font-family: 'Open-Sans', sans-serif;
@@ -148,15 +153,20 @@ body {
 	background-size: cover;
 }
 section {
-	padding:30px;
+	margin-top:30px;
 	
 	display: block;
 }
 a {
+
+} a:hover {
 	color:white;
 }
 section h3 {
 	font-weight: 600;
+	text-align: left;
+	margin-bottom: 10px;
+
 
 }
 
@@ -174,6 +184,9 @@ section h3 {
 }
 .lightBlue {
 	color:#0099FF;
+}
+.lightestBlue {
+	color:#CCFFFF
 }
 
 /*++++++++ ELEMENTS +++++++*/
@@ -195,7 +208,13 @@ section h3 {
 	text-align:center;
 	text-decoration: none;
 }
-
+.divider {
+	height:2px; 
+	width:100%; 
+	background:#2A202F;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 
 /*++++++++++++ CUSTOM HEADER ELEMENTS +++++++++++++*/
@@ -220,41 +239,56 @@ section h3 {
 	background: #2A202F;
 	width:100%;
 	z-index: 0;
-	padding: 40px;
-}
-#banner-text div {
-	margin-right: auto;
-	margin-left: auto;
 }
 #banner-text h1 {
 	margin-right: auto;
 	margin-left: auto;
 
 }
+#banner-text .divider {
+	background-color: white
+}
 #date {
 	margin:0; 
 	letter-spacing:20px;
 	font-size: larger;
 }
-.divider {
-	height:2px; 
-	width:90%; 
-	background:#FFFFFF
+
+
+/*========= ABOUT ==========*/
+
+#about {
+	background-color: white;
+
+}
+#about p {
+	text-align: left;
+}
+#about div img {
+	width:200px;
+}
+#about-icon-container {
+	margin: 0;
+	background:url('../assets/images/circuitbackground.png') no-repeat center center;  
+	background-color: #CCFFFF; 
+	-webkit-background-size: cover;  
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+}
+.about-icon img {
+	padding:20px;
+}
+.about-icon h2 {
+	color:#2A202F;
 }
 
 /*========= CONTACT ==========*/
 
 #contact {
 	background-color: #0099FF;
-	margin-top: 40px;
 } 
-#contact p{
-	font-size: large;
-}
-#contact h3 {
-	/*background-color: #2A202F;*/
-	padding:15px;
-}
+
 #contact-icon-container {
 	margin-right: auto;
 	margin-left: auto;
@@ -264,7 +298,9 @@ section h3 {
 	margin: 20px 10px;
 	transition: ease-out .3s;
 }
-
+#contact div p a:hover {
+	color:black;
+}
 
 /*========= FOOTER ==========*/
 
@@ -274,6 +310,7 @@ section h3 {
 	text-align: right;
 	padding:10px;
 	width: 100%;
+	margin-top:0;
 }
 #footer p {
 	font-size: medium;
@@ -283,13 +320,20 @@ section h3 {
 /*================= MISCELLANEOUS ==================*/
 
 
-#about {
-	background-color: white;
-
-}
 #sponsors {
-	background-color:#2A202F;
+	background-color:white;
 }
 .spacer {
-	height:500px;
+	height:70px;
 }
+.container {
+	padding-top:40px;
+	padding-bottom: 40px;
+}
+.img-circle {
+	border-radius:50%;
+	width:500px;
+	height:auto;
+	margin:40px;
+}
+
