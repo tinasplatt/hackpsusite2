@@ -335,6 +335,10 @@ section h3 {
 #sponsors {
 	background-color:white;
 }
+.sponsor img {
+	max-width: 80%;
+	height:auto;
+}
 .spacer {
 	height:70px;
 }
