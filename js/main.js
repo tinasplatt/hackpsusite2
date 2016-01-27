@@ -14,6 +14,7 @@ $( document ).ready(function() {
 	 
 	} else {
 		animations();
+		scrollyDividers();
 	}
     
 
@@ -24,6 +25,33 @@ $( document ).ready(function() {
     		$(this).removeClass('tada');
     	}
     );
- 
- })
+
+
+
+    function scrollyDividers() {
+    	//var lastScrollTop = 0;
+		$(window).scroll( function() {
+
+			var top = $(this).scrollTop();
+			//if (top > lastScrollTop) {
+				$('section').each( function() {
+					var height = $(this).height();
+					var sectionOffset = $(this).offset();
+					if (top + window.innerHeight > sectionOffset.top) {
+						setWidth=100*(top + window.innerHeight - sectionOffset.top)/window.innerHeight;
+						if (setWidth > 100 ) {
+							setWidth = 100;
+						}
+					
+						$('.scrolly-divider', this).width(setWidth+'%');
+						$('.tinyhexagon', this).css({
+								'margin-left': setWidth + '%',
+						})
+						$('.tinyhexagon span', this).css('transform', 'rotate(' + setWidth * 10 + 'deg)')
+					}
+
+				})
+		});
+	}
+})
 

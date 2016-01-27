@@ -174,13 +174,6 @@ a {
 } a:hover {
 	color:white;
 }
-section h3 {
-	font-weight: 600;
-	text-align: left;
-	margin-bottom: 10px;
-
-
-}
 
 /*======================= CUSTOM ===========================*/
 
@@ -224,8 +217,22 @@ section h3 {
 	height:2px; 
 	width:100%; 
 	background:#2A202F;
-	margin-right: auto;
-	margin-left: auto;
+}
+.section-header {
+	text-align: left;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.tinyhexagon {
+	margin-top: -30px;
+	text-align: left;
+	font-size: 25px;
+	color:#0099FF;
+	padding:4px;
+}
+.scrolly-divider {
+	margin: 10px 0;
+	height:4px;
 }
 
 
@@ -258,7 +265,9 @@ section h3 {
 
 }
 #banner-text .divider {
-	background-color: white
+	background-color: white;
+	margin-right: auto;
+	margin-left: auto;
 }
 #date {
 	margin:0; 
@@ -275,6 +284,7 @@ section h3 {
 }
 #about p {
 	text-align: left;
+
 }
 #about div img {
 	
@@ -311,9 +321,6 @@ section h3 {
 	margin: 20px 10px;
 	transition: ease-out .3s;
 }
-#contact div p a:hover {
-	color:black;
-}
 
 /*========= FOOTER ==========*/
 
@@ -337,8 +344,13 @@ section h3 {
 	background-color:white;
 }
 .sponsor img {
-	max-width: 80%;
+	max-width: 100%;
 	height:auto;
+	padding:20px;
+
+}
+#sponsors div p a:hover {
+	color:#2A202F;
 }
 
 /*====================  MISCELLANEOUS ====================*/
