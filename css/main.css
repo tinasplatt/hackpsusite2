@@ -201,18 +201,20 @@ a {
 	background: none;
 	border: 2px solid white;
 	padding:10px 10px;
-	letter-spacing: 2px;
 	transition: ease-out .5s;
-	font-size:medium;
 	margin: 5px 0;
 	color:white;
-	font-weight: 200;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: large;
+	letter-spacing: 5px
 
 } .button:hover {
 	border: 2px solid #FFCC33;
-	transition: ease-out .1s;
+	transition: linear .1s;
 	text-align:center;
 	text-decoration: none;
+	background-color: 3399FF
 }
 .divider {
 	height:2px; 
@@ -284,6 +286,7 @@ a {
 #about {
 	background-color: white;
 
+
 }
 #about p {
 	text-align: left;
@@ -307,6 +310,45 @@ a {
 }
 .about-icon h2 {
 	color:#2A202F;
+}
+
+/*================= SCHEDULE ==================*/
+
+#schedule {
+	background-color: #2A202F;
+}
+#schedule p {
+	color: white;
+}
+#schedule .divider {
+	background-color: white;
+}
+
+table {
+	margin:20px;
+}
+
+td {
+	padding:10px;
+	font-size: smaller;
+}
+td:first-child { 
+    color: #FFCC33;
+    font-weight: 300;
+    font-size: large;
+    letter-spacing: 2px;
+}td:last-child {
+	color:white;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: large;
+	letter-spacing: 5px
+}
+#schedule-container div h4 {
+	font-size: smaller;
+	padding:10px;
+	text-align: left;
+	background-color: #3399FF;
 }
 
 /*================= FAQ ==================*/
@@ -347,6 +389,7 @@ a {
 }
 .answer p{
 	line-height:120%;
+
 	
 }
 .rotated {

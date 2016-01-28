@@ -51,15 +51,15 @@ $( document ).ready(function() {
 		});
 	}
 	// all used for styling
-	$('.question-container').hover( function() {
+	$('.question').hover( function() {
 		console.log('hover');
-		$('.question p span', this).addClass('yellow');
+		$('p span', this).addClass('yellow');
 	}, function() {
-		$('.question p span', this).removeClass('yellow')
+		$('p span', this).removeClass('yellow')
 	})
 	.click( function() {
-		$('.answer', this).slideToggle('medium', 'linear');
-		$('.question p span',this).toggleClass('rotated');
+		$(this).siblings().slideToggle('medium', 'linear');
+		$('p span',this).toggleClass('rotated');
 	});
 
 	$('.question p').prepend('<span class="glyphicon glyphicon-triangle-right"></span>  ');
