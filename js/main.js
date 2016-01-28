@@ -23,6 +23,7 @@ $( document ).ready(function() {
     	);
 	} else {
 		$('.tinyhexagon').css('display', 'none');
+		$('#gearbox').css('display', 'none');
 	}
 
     function scrollyDividers() {
@@ -44,7 +45,7 @@ $( document ).ready(function() {
 						$('.tinyhexagon', this).css({
 								'margin-left': setWidth - 5 + '%',
 						})
-						$('.tinyhexagon span', this).css('transform', 'rotate(' + setWidth * 10 + 'deg)')
+						$('.tinyhexagon span', this).css('transform', 'rotate(' + setWidth * 20 + 'deg)')
 					}
 
 				})

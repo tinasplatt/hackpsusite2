@@ -172,7 +172,7 @@ section {
 a {
 
 } a:hover {
-	color:white;
+	
 	text-decoration: none;
 }	
 
@@ -180,7 +180,7 @@ a {
 
 /*++++++++ COLORS +++++++*/
 .yellow {
-	color:#FFCC33;
+	color:#FFCC66;
 }
 .white {
 	color:white;
@@ -210,11 +210,11 @@ a {
 	letter-spacing: 5px
 
 } .button:hover {
-	border: 2px solid #FFCC33;
+	border: 2px solid #ffcc66;
 	transition: linear .1s;
 	text-align:center;
 	text-decoration: none;
-	background-color: 3399FF
+	background-color: #3399FF
 }
 .divider {
 	height:2px; 
@@ -262,7 +262,7 @@ a {
 	background: #2A202F;
 	width:100%;
 	z-index: 0;
-	border-bottom: 10px #FFCC33 solid;
+	border-bottom: 10px #FFCC66 solid;
 }
 #banner-text h1 {
 	margin-right: auto;
@@ -323,7 +323,9 @@ a {
 #schedule .divider {
 	background-color: white;
 }
-
+#schedule-container {
+	z-index: 20;
+}
 table {
 	margin:20px;
 }
@@ -333,7 +335,7 @@ td {
 	font-size: smaller;
 }
 td:first-child { 
-    color: #FFCC33;
+    color: #FFCC66;
     font-weight: 300;
     font-size: large;
     letter-spacing: 2px;
@@ -357,10 +359,10 @@ td:first-child {
 #faq {
 	background:url('../assets/images/hexagonbackground.png') repeat-y top center;  
 	background-color: #CCFFFF; 
-	-webkit-background-size: cover;  
-	-moz-background-size: cover; 
-	-o-background-size: cover; 
-	background-size: cover;
+	-webkit-background-size: auto;  
+	-moz-background-size: auto; 
+	-o-background-size: auto; 
+	background-size: auto;
 	background-color:#CCFFFF;
 }
 #faq div h3{
@@ -460,4 +462,24 @@ td:first-child {
 	height:auto;
 	margin:20px;
 }
+#gearbox{
+	float:right;
+	margin-top: -150px;
+}
+.gear {
+	z-index: 0;
+	opacity: 0.3;
+	display: inline-block
+	
+} 
+.gear1 img {
+	animation:spin 6s infinite linear;
+	height: 130px
+}
+.gear2 img {
+	height:80px;
+	animation:spin 6s infinite linear;
+	animation-direction:reverse;
+}
+
 
