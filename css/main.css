@@ -71,7 +71,7 @@ table {
 		font-size: 40%;
 	}
 	p {
-		font-size: 40%
+		font-size: 55%
 	}
 
 }
@@ -93,7 +93,7 @@ table {
 		font-size: 40%;
 	}
 	p {
-		font-size: 60%
+		font-size: 55%
 	}
 }
 
@@ -114,7 +114,7 @@ table {
 		font-size: 50%;
 	}
 	p {
-		font-size: 70%
+		font-size: 50%
 	}
 }
 @media (min-width: 650px) {
@@ -134,7 +134,7 @@ table {
 		font-size: 70%;
 	}
 	p {
-		font-size: 80%
+		font-size: 70%
 	}
 }
 
@@ -173,13 +173,14 @@ a {
 
 } a:hover {
 	color:white;
-}
+	text-decoration: none;
+}	
 
 /*======================= CUSTOM ===========================*/
 
 /*++++++++ COLORS +++++++*/
 .yellow {
-	color:#e2cb59;
+	color:#FFCC33;
 }
 .white {
 	color:white;
@@ -188,7 +189,7 @@ a {
 	color:#2A202F;
 }
 .lightBlue {
-	color:#0099FF;
+	color:#3399FF;
 }
 .lightestBlue {
 	color:#CCFFFF
@@ -208,7 +209,7 @@ a {
 	font-weight: 200;
 
 } .button:hover {
-	border: 2px solid #e2cb59;
+	border: 2px solid #FFCC33;
 	transition: ease-out .1s;
 	text-align:center;
 	text-decoration: none;
@@ -227,9 +228,10 @@ a {
 	margin-top: -30px;
 	text-align: left;
 	font-size: 25px;
-	color:#0099FF;
+	color:#3399FF;
 	padding:4px;
 }
+
 .scrolly-divider {
 	margin: 10px 0;
 	height:4px;
@@ -258,6 +260,7 @@ a {
 	background: #2A202F;
 	width:100%;
 	z-index: 0;
+	border-bottom: 10px #FFCC33 solid;
 }
 #banner-text h1 {
 	margin-right: auto;
@@ -306,10 +309,73 @@ a {
 	color:#2A202F;
 }
 
+/*================= FAQ ==================*/
+
+
+#faq {
+	background:url('../assets/images/hexagonbackground.png') repeat-y top center;  
+	background-color: #CCFFFF; 
+	-webkit-background-size: cover;  
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+	background-color:#CCFFFF;
+}
+#faq div h3{
+	color:#2A202F;
+
+
+}
+
+
+.question-container{
+	padding:10px;
+	text-align: left;
+}
+.question{
+	background-color: #2A202F;
+	color:white;
+}
+.question p span{
+	transition: ease-out .5s;
+} 
+
+.answer{
+	background-color:white;
+	color: #2A202F;
+	display: none; 
+}
+.answer p{
+	line-height:120%;
+	
+}
+.rotated {
+	transform: rotate(90deg);
+	transition: ease-out .5s;
+}
+
+
+/*================= SPONSORS ==================*/
+
+
+#sponsors {
+	background-color:white;
+}
+.sponsor img {
+	max-width: 400px;
+	width: 100%;
+	height:auto;
+	padding:20px;
+
+}
+#sponsors div p a:hover {
+	color:#2A202F;
+}
+
 /*========= CONTACT ==========*/
 
 #contact {
-	background-color: #0099FF;
+	background-color: #3399FF;
 } 
 
 #contact-icon-container {
@@ -335,22 +401,6 @@ a {
 #footer p {
 	font-size: medium;
 	font-weight: 200;
-}
-
-/*================= SPONSORS ==================*/
-
-
-#sponsors {
-	background-color:white;
-}
-.sponsor img {
-	max-width: 100%;
-	height:auto;
-	padding:20px;
-
-}
-#sponsors div p a:hover {
-	color:#2A202F;
 }
 
 /*====================  MISCELLANEOUS ====================*/

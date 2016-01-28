@@ -4,32 +4,29 @@ $( document ).ready(function() {
 
     var isMobile = true;
 
-	if ( screen.width > 700  && window.innerWidth > 500) {
+	if ( window.innerWidth > 600 ) {
 		isMobile = false;
-	} else {
-		isMobile = true;
-	}
+	} 
 
-	if(isMobile) {
-	 
-	} else {
+	console.log(isMobile)
+
+	if ( isMobile == false ) {
 		animations();
 		scrollyDividers();
+
+		$(".animated-icon").hover(
+	    	function() {
+	    		$(this).addClass('tada');
+	    	}, function() {
+	    		$(this).removeClass('tada');
+	    	}
+    	);
+	} else {
+		$('.tinyhexagon').css('display', 'none');
 	}
-    
-
-    $(".animated-icon").hover(
-    	function() {
-    		$(this).addClass('tada');
-    	}, function() {
-    		$(this).removeClass('tada');
-    	}
-    );
-
-
 
     function scrollyDividers() {
-    	//var lastScrollTop = 0;
+
 		$(window).scroll( function() {
 
 			var top = $(this).scrollTop();
@@ -38,14 +35,14 @@ $( document ).ready(function() {
 					var height = $(this).height();
 					var sectionOffset = $(this).offset();
 					if (top + window.innerHeight > sectionOffset.top) {
-						setWidth=100*(top + window.innerHeight - sectionOffset.top)/window.innerHeight;
+						setWidth=100*(top + window.innerHeight - sectionOffset.top)/height;
 						if (setWidth > 100 ) {
 							setWidth = 100;
 						}
 					
-						$('.scrolly-divider', this).width(setWidth+'%');
+						$('.scrolly-divider', this).width(setWidth -5 +'%');
 						$('.tinyhexagon', this).css({
-								'margin-left': setWidth + '%',
+								'margin-left': setWidth - 5 + '%',
 						})
 						$('.tinyhexagon span', this).css('transform', 'rotate(' + setWidth * 10 + 'deg)')
 					}
@@ -53,5 +50,25 @@ $( document ).ready(function() {
 				})
 		});
 	}
+	// all used for styling
+	$('.question-container').hover( function() {
+		console.log('hover');
+		$('.question p span', this).addClass('yellow');
+	}, function() {
+		$('.question p span', this).removeClass('yellow')
+	})
+	.click( function() {
+		$('.answer', this).slideToggle('medium', 'linear');
+		$('.question p span',this).toggleClass('rotated');
+	});
+
+	$('.question p').prepend('<span class="glyphicon glyphicon-triangle-right"></span>  ');
+
+	// $('.question-container').hover( function() {
+	// 	console.log('hover');
+	// 	$('.question p span', this).addClass('yellow');
+	// }, function() {
+	// 	$('.question p span', this).removeClass('yellow')
+	// });
 })
 
