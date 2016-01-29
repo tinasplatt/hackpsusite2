@@ -157,7 +157,7 @@ body {
 	text-align: center;
 	font-family: 'Open-Sans', sans-serif;
 	font-size: xx-large;
-	background:url(../assets/images/cybertorium2.jpg) no-repeat center center fixed;  
+	background:url(../assets/backgrounds/cybertorium2.jpg) no-repeat center center fixed;  
 	background-color: #CCFFFF; 
 	-webkit-background-size: cover;  
 	-moz-background-size: cover; 
@@ -165,8 +165,6 @@ body {
 	background-size: cover;
 }
 section {
-	margin-top:30px;
-	
 	display: block;
 }
 a {
@@ -189,7 +187,7 @@ a {
 	color:#2A202F;
 }
 .lightBlue {
-	color:#3399FF;
+	color:#3399CC;
 }
 .lightestBlue {
 	color:#CCFFFF
@@ -214,7 +212,7 @@ a {
 	transition: linear .1s;
 	text-align:center;
 	text-decoration: none;
-	background-color: #3399FF
+	background-color: #3399CC
 }
 .divider {
 	height:2px; 
@@ -230,7 +228,7 @@ a {
 	margin-top: -30px;
 	text-align: left;
 	font-size: 25px;
-	color:#3399FF;
+	color:#3399CC;
 	padding:4px;
 }
 
@@ -262,7 +260,8 @@ a {
 	background: #2A202F;
 	width:100%;
 	z-index: 0;
-	border-bottom: 10px #FFCC66 solid;
+	margin-bottom: 40px;
+
 }
 #banner-text h1 {
 	margin-right: auto;
@@ -297,12 +296,14 @@ a {
 }
 #about-icon-container {
 	margin: 0;
-	background:url('../assets/images/circuitbackground.png') no-repeat center center;  
+	background:url('../assets/backgrounds/circuitbackground.png') no-repeat center center;  
 	background-color: #CCFFFF; 
 	-webkit-background-size: cover;  
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
 	background-size: cover;
+	/*border-bottom: 10px #FFCC66 solid;*/
+	border-top: 10px #FFCC66 solid;
 }
 .about-icon img {
 	padding:20px;
@@ -316,6 +317,7 @@ a {
 
 #schedule {
 	background-color: #2A202F;
+	padding:50px 0;
 }
 #schedule p {
 	color: white;
@@ -350,20 +352,21 @@ td:first-child {
 	font-size: smaller;
 	padding:10px;
 	text-align: left;
-	background-color: #3399FF;
+	background-color: #3399CC;
 }
 
 /*================= FAQ ==================*/
 
 
 #faq {
-	background:url('../assets/images/hexagonbackground.png') repeat-y top center;  
+	background:url('../assets/backgrounds/hexagonbackground.png') repeat-y top center;  
 	background-color: #CCFFFF; 
 	-webkit-background-size: auto;  
 	-moz-background-size: auto; 
 	-o-background-size: auto; 
 	background-size: auto;
 	background-color:#CCFFFF;
+	padding:50px 0;
 }
 #faq div h3{
 	color:#2A202F;
@@ -405,6 +408,8 @@ td:first-child {
 
 #sponsors {
 	background-color:white;
+	padding:50px 0;
+
 }
 .sponsor img {
 	max-width: 400px;
@@ -420,7 +425,7 @@ td:first-child {
 /*========= CONTACT ==========*/
 
 #contact {
-	background-color: #3399FF;
+	background-color: #3399CC;
 } 
 
 #contact-icon-container {
@@ -462,6 +467,7 @@ td:first-child {
 	height:auto;
 	margin:20px;
 }
+/*======== GEARS ========*/
 #gearbox{
 	float:right;
 	margin-top: -150px;
@@ -482,4 +488,23 @@ td:first-child {
 	animation-direction:reverse;
 }
 
+#changing-text-container {
+	padding:5px 10px 5px 10px;
+	background-color: #3399CC;
+	margin:5px;
+	/*font-family: 'Lekton', sans-serif;*/
+}
+#changing-text {
+	letter-spacing: 5px
+}
+.blink{
+    animation:blink .7s infinite alternate;
+}
+
+@keyframes blink {
+    0% { opacity:1; }
+    45% { opacity:1; }
+    55% { opacity:0; }
+    100% { opacity:0; }
+};
 

@@ -11,8 +11,11 @@ $( document ).ready(function() {
 	console.log(isMobile)
 
 	if ( isMobile == false ) {
+
 		animations();
 		scrollyDividers();
+		var index=0,count=0, word, words = ['innovate','learn','build','dream','code','create']
+		untype()
 
 		$(".animated-icon").hover(
 	    	function() {
@@ -21,15 +24,21 @@ $( document ).ready(function() {
 	    		$(this).removeClass('tada');
 	    	}
     	);
+    	$('.mobile-only').css('display', 'none');
+
 	} else {
-		$('.tinyhexagon').css('display', 'none');
-		$('#gearbox').css('display', 'none');
+
+		$('.desktop-only').css('display', 'none');
+
 	}
 
+
+
+
+
+
     function scrollyDividers() {
-
 		$(window).scroll( function() {
-
 			var top = $(this).scrollTop();
 			//if (top > lastScrollTop) {
 				$('section').each( function() {
@@ -51,9 +60,11 @@ $( document ).ready(function() {
 				})
 		});
 	}
+
+
+
 	// all used for styling
 	$('.question').hover( function() {
-		console.log('hover');
 		$('p span', this).addClass('yellow');
 	}, function() {
 		$('p span', this).removeClass('yellow')
@@ -65,11 +76,46 @@ $( document ).ready(function() {
 
 	$('.question p').prepend('<span class="glyphicon glyphicon-triangle-right"></span>  ');
 
-	// $('.question-container').hover( function() {
-	// 	console.log('hover');
-	// 	$('.question p span', this).addClass('yellow');
-	// }, function() {
-	// 	$('.question p span', this).removeClass('yellow')
-	// });
+	
+	
+
+	function type(word) {
+		setTimeout(function() {
+			if (word.length > 0) {
+				$('#changing-text').append( word.shift() )
+				type(word);
+			} else if (word.length==0){
+				pause();
+			}
+			
+		}, 200)
+	}
+	function untype() {
+		setTimeout(function() {
+			word=$('#changing-text').html().split('');
+			word.pop()
+			if (word.length > 0) {
+				$('#changing-text').empty().append( word )
+				untype()
+			} else if (word.length==0){
+				$('#changing-text').empty();
+				nextWord();
+			}
+			
+		}, 100)
+	}
+	function pause() {
+		setTimeout(function() {
+			untype();
+			
+		}, 2000)
+	}
+	function nextWord() { 	
+		index = count%6;
+		count++
+		word=words[index].split('');
+		type(word);
+	}
+
 })
 
