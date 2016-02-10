@@ -71,7 +71,7 @@ table {
 		font-size: 40%;
 	}
 	p {
-		font-size: 55%
+		font-size: 45%
 	}
 
 }
@@ -114,7 +114,7 @@ table {
 		font-size: 50%;
 	}
 	p {
-		font-size: 50%
+		font-size: 60%
 	}
 }
 @media (min-width: 650px) {
@@ -312,6 +312,23 @@ a {
 .about-icon h2 {
 	color:#2A202F;
 }
+
+/*================= CLUB CUP ==================*/
+#club-cup {
+	background-color: white;
+}
+
+#club-cup p {
+	text-align: left;
+}
+
+#club-cup-image {
+	max-width:400px;
+	width:100%;
+	height:auto;
+	padding:20px;
+}
+
 
 /*================= SCHEDULE ==================*/
 
