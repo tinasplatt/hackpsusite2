@@ -345,20 +345,20 @@ a {
 #schedule-container {
 	z-index: 20;
 }
-table {
+#schedule table {
 	margin:20px;
 }
 
-td {
+#schedule td {
 	padding:10px;
 	font-size: smaller;
 }
-td:first-child { 
+#schedule td:first-child { 
     color: #FFCC66;
     font-weight: 300;
     font-size: large;
     letter-spacing: 2px;
-}td:last-child {
+}#schedule td:last-child {
 	color:white;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -435,6 +435,14 @@ td:first-child {
 	height:auto;
 	max-height:250px;
 	padding:30px;
+
+
+}
+.sponsor-list-image img {
+	max-width: 300px;
+	width:auto;
+	height:auto;
+
 
 
 }

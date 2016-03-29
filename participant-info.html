@@ -1,0 +1,263 @@
+<html>
+	<head>
+		<title>HackPSU | Welcome to #HackyValley.</title>
+
+		<!-- fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lekton:400' rel='stylesheet' type='text/css'>
+
+
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="shortcut icon" href="assets/icons/favicon.ico">
+
+		<!-- other scripts -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type='text/javascript' src='js/hexagons.js'></script>
+		<script src="js/participant-info.js"></script>
+		<script src="js/quickfit.js"></script>
+		<script src="assets/json-objects.js"></script>
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<!-- styles -->
+		
+		<link rel="stylesheet" type="text/css" href="css/hexagons.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/participant.css">
+
+
+		<!-- ~~so metadata -->
+		<meta property="og:title" content="HackPSU: Penn State's Official Hackathon" />
+		<meta property="og:site_name" content="HackPSU.org"/>
+		<meta property="og:description" content="Join us April 9th for HackPSU, Penn State's Official Hackathon! 500 students will have 24 hours to build the coolest technology they can to compete for prizes and eternal glory." />
+		<meta property="og:image" content="assets/images/hackpsulogo.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	</head>
+	<body>
+		
+		<section id='header'>
+			<div id="logo-container">
+				<img src="assets/images/hackpsulogo.png" class="animated rubberBand" alt="hackpsulogo" >
+			</div>
+			<div id="banner">
+				<div class="container">
+					<div id='banner-text'>						
+						<h1 class='tagline'>welcome to #hackyvalley</h1>
+
+						<div class='divider'></div>
+						<h1 id="date"><span class="yellow">04</span>.<span class="yellow">09</span>.<span class="yellow">1<span style='letter-spacing:0px;'>6</span></span></h1>
+						<div class='divider'></div>
+
+						<h1 class='tagline'>Penn state university</h1>						
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section id='welcome'>
+			<div class='container'>
+				<h1>Welcome to HackPSU!</h1>
+				<ol id='table-of-contents'>
+				</ol>
+			</div>
+		</section>
+
+		<section id='content'>
+			<div id='arrival-info'>
+				<h1>Arrival</h1>
+				<p> Check in will happen in the foyer of the Business Building.</p>
+				<p>Parking is available in the lot </p>
+
+
+			</div>
+
+
+			<div id='venue-info'>
+				<h1>Venue</h1>
+
+
+
+
+
+			</div>
+
+
+			<div id='schedule'>
+				<div class='container'>
+					<h1 class='white'>Schedule</h1>
+
+					<div class='row' id='schedule-container'>
+						<div class='col-md-6'>
+							<h4>saturday <span class='yellow'>04/09</span></h4>
+							<table id='saturday' class='schedule'>
+								<tr>
+									<td>10:00AM</td>
+									<td>check-in begins</td>
+								</tr>
+								<tr>
+									<td>12:00PM</td>
+									<td>opening ceremony</td>
+								</tr>
+								<tr>
+									<td>01:00PM</td>
+									<td>lunch/hacking begins</td>
+								</tr>
+								<tr>
+									<td>04:00PM</td>
+									<td>workshops</td>
+								</tr>
+								<tr>
+									<td>07:00PM</td>
+									<td>dinner</td>
+								</tr>
+								<tr>
+									<td>12:00AM</td>
+									<td>midnight snack</td>
+								</tr>
+
+							</table>
+						</div>
+						<div class='col-md-6'>
+							<h4>sunday <span class='yellow'>04/10</span></h4>
+							<table id='sunday' class='schedule'>
+								<tr>
+									<td>08:30AM</td>
+									<td>breakfast</td>
+								</tr>
+								<tr>
+									<td>12:00PM</td>
+									<td>lunch</td>
+								</tr>
+								<tr>
+									<td>01:00PM</td>
+									<td>hacking ends</td>
+								</tr>	
+								<tr>
+									<td>01:30PM</td>
+									<td>expo</td>
+								</tr>
+								<tr>
+									<td>02:30PM</td>
+									<td>closing ceremony</td>
+								</tr>
+								<tr>
+									<td>04:00PM</td>
+									<td>departure</td>
+								</tr>
+
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id='sponsor-information'>
+				<div class='container'>
+					<h1>Sponsors</h1>
+					<table id='sponsor-list'>
+					</table>
+				</div>
+
+			</div>
+
+
+			<div id='workshops'>
+				<div class='container'>
+					<h1>Workshops</h1>
+					<h5>Block 1</h5>
+					<table class="workshop-list table" id="workshop-block-1">
+						
+					</table>
+					<h5>Block 2</h5>
+					<table class="workshop-list table" id="workshop-block-2">
+
+					</table>
+				</div>
+			</div>
+			<div id='hardware'>
+				<h1>Hardware</h1>
+			</div>
+			<div id='communication'>
+				<div class='container'>
+					<h1>Communication</h1>
+					<div class='row comm-medium'>
+						<div class='col-md-4'>
+							<a href='https://hackpsuspring2016.slack.com/'>
+								<img src="assets/images/slack.png">
+								<h4>Slack</h4>
+								<p>Use our Slack channel to talk to mentors, communicate with the team and chat with other hackers.</p>
+							</a>
+						</div>
+						<div class='col-md-4'>
+
+							
+							<img src="assets/images/remind.png">
+							<h4>Remind</h4>
+							<p>Sign up for text announcements by texting ###### to 81010.</p>
+						</div>
+						<div class='col-md-4'>
+							<a href='http://www.facebook.com/hackpsu'>
+								<img src="assets/images/facebook.png">
+								<h4>Facebook</h4>
+								<p>Check our Facebook for announcements and to coordinate with other hackers.</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='rules'>
+				<h1>Rules</h1>
+			</div>
+			<div id='prizes'>
+				<div class='container'>
+					<h1>Prizes</h1>
+					<table class="table" id="prize-list">
+						
+					</table>
+
+				</div>
+
+			</div>
+			<div id='submission-info'>
+				<div class='container'>
+					<h1>Submission</h1>
+					<h3>1. Create a <a href='http://github.com'>Github account</a> if you do not have one already.</h3>
+					<h3>2. Go to <a href='http://hackpsu-s2016.devpost.com/'>our Devpost event.</a></h3> 
+					<h3>3. Log in using your Github account. </h3>
+					<h3>4. Upload your project and submit it for judging.</h3>
+				</div>
+			</div>
+			<div id='expo-info'>
+				<div class='container'>
+					<h1>Expo Logistics</h1>
+
+
+					<div id='expo-form'>
+						<h3>1. Register your team <span class="glyphicon glyphicon-play"></span></h3>
+						<iframe src="https://docs.google.com/forms/d/1wRYpfPyNAMUIjB5XG3moC6FbkM8GxqM39C4yBuW2K1k/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+					</div>
+
+					<h3>2. Check your table</h3>
+					<p>Check <a href="https://docs.google.com/spreadsheets/d/1mwKpeh88YfXYlO5iQWDJ0Xbn3tSCeFKDdO-2CP8d7eo/edit?usp=sharing">this spreadsheet</a> to find which table your team is assigned to.</p>
+
+					<h3>3. Find your table when the expo begins at 1:00 PM.</h3>
+				</div>
+			</div>
+			<div id='judges'>
+				<div class='container'>
+					<h1>Judges</h1>
+					<table id='judges-list'>
+					</table>
+
+
+			</div>
+		</section>
+

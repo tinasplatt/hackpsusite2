@@ -1,0 +1,101 @@
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    text-align: left
+}
+
+#content {
+	background: white;
+	color:black;
+}
+#content h1, h2, h3 {
+	color:black;
+	margin-bottom:20px;
+}
+#content h5 {
+	color:black;
+	text-align:left;
+	font-size: 70%;
+}
+#welcome {
+	background: white;
+	
+}
+#welcome h1{
+	color:black;
+
+}
+
+#schedule-info {
+	background:#2A202F;
+}
+#sponsor-list td {
+	text-align: left;
+	padding:10px;
+}
+
+#sponsor-list h5 {
+	color:black;
+	text-align: left;
+}
+
+.workshop-list td {
+	padding:10px;
+	border-bottom:1px solid #999999;
+	font-size: 18px;
+}
+#prize-list td {
+	padding:10px;
+	border-bottom:1px solid #999999;
+	font-size: 18px;
+}
+#judges-list td {
+	text-align: left;
+	padding:10px;
+}
+#judges-list img {
+	width:200px;
+	height:200px;
+}
+
+.comm-medium h4 {
+	color:black;
+	font-size:24px;
+	margin-top:15px;
+}
+.comm-medium img {
+	width:200px;
+	height:200px;
+}
+.comm-medium p {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+#content #schedule h1 {
+	color:white;
+}
+#expo-info p {
+	font-size: 20px;
+	text-align: left;
+	margin-top:-30px;
+}
+#expo-info h3 {
+	font-size: 75%;
+	text-align: left;
+}
+.rotated {
+	transform: rotate(90deg)
+}
+#expo-info iframe {
+	display:none;
+}
+#submission-info h3 {
+	font-size: 75%;
+	text-align: left
+}
