@@ -33,10 +33,6 @@ $( document ).ready(function() {
 	}
 
 
-
-
-
-
     function scrollyDividers() {
 		$(window).scroll( function() {
 			var top = $(this).scrollTop();
