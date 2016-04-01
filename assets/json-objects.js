@@ -13,10 +13,21 @@ var Info = { "sponsors":
 	    {
 	    	"name":"Penn State World Campus", 
 	    	"logo":"http://news.psu.edu/sites/default/files/styles/threshold-992/public/EdTech-Network-Mark.jpg?itok=4qTvlAIs", 
-	    	"description": ""}, 
+	    	"description": ""
+	    }, 
 	    {
 	    	"name":"Capital One", 
 	    	"logo":"assets/sponsors/capital-one.svg", 
+	    	"description": ""
+	    },    
+	    {
+	    	"name":"National Instruments", 
+	    	"logo":"assets/sponsors/ni.png", 
+	    	"description": ""
+	    }, 
+		{
+	    	"name":"IBM", 
+	    	"logo":"assets/sponsors/ibm.png", 
 	    	"description": ""
 	    }, 
 	    {
@@ -57,6 +68,46 @@ var Info = { "sponsors":
 	    {
 	    	"name":"Global Entrepreneurship Week at PSU", 
 	    	"logo":"assets/sponsors/GEW.jpg", 
+	    	"description": ""
+	    },
+	    {
+	    	"name":"Pariveda", 
+	    	"logo":"assets/sponsors/pariveda.jpg", 
+	    	"description": ""
+	    },
+	    {
+	    	"name":"TechHiring", 
+	    	"logo":"assets/sponsors/techhiring.png", 
+	    	"description": ""
+	    },
+	    {
+	    	"name":"Live It", 
+	    	"logo":"assets/sponsors/liveit.png", 
+	    	"description": ""
+	    },
+	    {
+	    	"name":"Wolfram Language", 
+	    	"logo":"assets/sponsors/wolfram.png", 
+	    	"description": ""
+	    },
+	    {
+	    	"name":"Namecheap", 
+	    	"logo":"assets/sponsors/namecheap.png", 
+	    	"description": ""
+	    },
+	    {
+	    	"name":"BStack", 
+	    	"logo":"assets/sponsors/bstack.png", 
+	    	"description": ""
+	    },
+	    {
+	    	"name":"Jetbrains", 
+	    	"logo":"assets/sponsors/jetbrains.png", 
+	    	"description": ""
+	    },
+	    {
+	    	"name":"Hack Harassment", 
+	    	"logo":"assets/sponsors/HH_logo_dark.png", 
 	    	"description": ""
 	    }
 
@@ -107,7 +158,63 @@ var Info = { "sponsors":
 	    }
 
 	],
+	"hardware":
+	[
+		{
+			"type": "Intel Edison",
+			"quantity":10
+		},
+		{
+			"type": "Arduino",
+			"quantity":6
+		},
+		{
+			"type": "Firephone",
+			"quantity":3
+		},
+		{
+			"type": "Leap",
+			"quantity":10
+		},
+		{
+			"type": "Muse",
+			"quantity":3
+		},
+		{
+			"type": "Oculus",
+			"quantity":12
+		},
+		{
+			"type": "Pebble",
+			"quantity":20
+		},
+		{
+			"type": "Sparkcore",
+			"quantity":10
+		},
+		{
+			"type": "Myo",
+			"quantity":24
+		},
+		{
+			"type": "Dell Monitor",
+			"quantity":3
+		},
+		{
+			"type": "Dell XPS Laptop",
+			"quantity":2
+		},
+		{
+			"type": "Dell Alienware Laptop",
+			"quantity":2
+		},
+		{
+			"type": "Nest",
+			"quantity":1
+		},
+	]
 };
+
 
 
 

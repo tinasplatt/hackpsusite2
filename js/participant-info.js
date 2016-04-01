@@ -4,7 +4,7 @@ $(document).ready( function() {
 		$('.glyphicon-play').toggleClass('rotated');
 	});
 
-	$('#content > div').each( function() {
+	$('.content > div').each( function() {
 		sectionTitle = $('h1',this).text();
 		$('#table-of-contents').append('<li><a href="#' 
 			+ $(this).attr("id") + '">' 
@@ -34,7 +34,6 @@ $(document).ready( function() {
 	for (var key in workshops) {
 		var workshop = workshops[key];
 
-		console.log('poop');
 	   	var workshopHTML =
 	   	'<tr><td>'
 	   	+ workshop.name
@@ -75,8 +74,96 @@ $(document).ready( function() {
 		   	+ judge.name 
 		   	+ '</h5><p>'
 		   	+ judge.description
-		   	+ '</p></td><</tr>';
+		   	+ '</p></td></tr>';
 			   	
 		   	$('#judges-list').append(judgeHTML);
+	}
+	var hardware = Info["hardware"];
+	for (var key in hardware) {
+			var item = hardware[key];
+		   	var itemHTML =
+		   	'<tr><td>'
+		   	+ item.quantity 
+		   	+ '</td><td>'
+		   	+ item.type
+		   	+ '</td></tr>';
+			   	
+		if ( key < 7) {
+		   	$('#hardware-list-1').append(itemHTML);
+		} else {
+			$('#hardware-list-2').append(itemHTML);
 		}
-	});
+	};
+
+
+	currentTime = (new Date().getTime())/1000;
+	startTime = 1460217600;
+	endTime = 1460250000;
+
+	if ( currentTime < startTime) {
+		$('#countdown-text').text('until hackpsu!')
+		getTimeRemaining(currentTime, startTime);
+		isBeforeEvent = 1;
+	} else if (currentTime < endTime ){
+		$('#countdown-text').text('remains!')
+		getTimeRemaining(currentTime, endTime);
+		isBeforeEvent = 0;
+	}
+
+	function getTimeRemaining(currentTime, countdownTime) {
+		timeTill = countdownTime - currentTime;
+		$('#days div').text(Math.floor(timeTill / 86400));
+		timeTill = timeTill % 86400;
+		$('#hours div').text(Math.floor(timeTill / 3600));
+		timeTill = timeTill % 3600;
+		$('#minutes div').text(Math.floor(timeTill / 60));
+		$('#seconds div').text(Math.floor(timeTill % 60));
+		countDown(currentTime, countdownTime);
+	}
+
+	function countDown(currentTime, countdownTime) {
+		setTimeout(function() {
+			currentTime++;
+			if ((countdownTime - currentTime) == 0) {
+				if ( isBeforeEvent == 1) {
+					$('#countdown-text').text('remains!')
+					getTimeRemaining(currentTime, endTime);
+				} else {
+					$('.unit > div').each(function() {
+						$(this).text('0');
+					})
+				}	
+			} else {
+				getTimeRemaining(currentTime, countdownTime);
+			}			
+		},1000);	
+	}
+
+	eventTimes = [0,2,3,6,9,14,22.5,26,27,27.5,28.5,30];
+	for (var i=0; i<12; i++) {
+		console.log($('#timeline-bar').width());
+		distance = (eventTimes[i]/30 * $('#timeline-bar').width()) - 15;
+		if (i < 6 ) {
+			whichDay = '#day1';
+		} else {
+			whichDay = '#day2';
+		}
+		
+		$('#timeline').append($('<div>')
+			.addClass('timeline-circle')
+			.css( {
+				'left' : eventTimes[i]/30 * $('#timeline-bar').width() - 15, 
+				'top' : (-30 * i)-18 
+			})
+			.attr("data-whichDay",whichDay)
+			.attr("data-tableRow", i % 6 + 1)
+		);
+	};
+
+	$('.timeline-circle').each( function() {
+		$(this).hover( function() {
+			selectorString = $(this).attr('data-whichDay') + ' tr:nth-child(' +  $(this).attr('data-tableRow') + ')';
+			$(selectorString).toggleClass('selected-event');
+		})
+	})
+});

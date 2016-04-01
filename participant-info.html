@@ -44,48 +44,63 @@
 			<div id="logo-container">
 				<img src="assets/images/hackpsulogo.png" class="animated rubberBand" alt="hackpsulogo" >
 			</div>
-			<div id="banner">
-				<div class="container">
-					<div id='banner-text'>						
-						<h1 class='tagline'>welcome to #hackyvalley</h1>
+			
+		</section>
 
-						<div class='divider'></div>
-						<h1 id="date"><span class="yellow">04</span>.<span class="yellow">09</span>.<span class="yellow">1<span style='letter-spacing:0px;'>6</span></span></h1>
-						<div class='divider'></div>
-
-						<h1 class='tagline'>Penn state university</h1>						
-					</div>
-
+		<section id='floating'>
+			<div>
+				<div id='countdown-timer'>
+					<div id='days' class='unit'><div>0</div>days</div>
+					<div id='hours' class='unit'><div>0</div>hours</div>
+					<div id='minutes' class='unit'><div>0</div>minutes</div>
+					<div id='seconds' class='unit'><div>0</div>seconds</div>
+					<h3 id='countdown-text'></h3>
+				</div>
+				<div id='twitter-feed'>
+					<a class="twitter-timeline" href="https://twitter.com/HackPSU" data-widget-id="715636733874819072">Tweets by @HackPSU</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 			</div>
 		</section>
 
-
 		<section id='welcome'>
 			<div class='container'>
 				<h1>Welcome to HackPSU!</h1>
+				<p>This guide will tell you everything you need to know in order to have a great time this weekend!</p>
 				<ol id='table-of-contents'>
 				</ol>
 			</div>
 		</section>
 
-		<section id='content'>
+		<section class='content'>
 			<div id='arrival-info'>
-				<h1>Arrival</h1>
-				<p> Check in will happen in the foyer of the Business Building.</p>
-				<p>Parking is available in the lot </p>
-
-
+				<div class='container'>
+					<h1>Arrival</h1>
+					<div class='row'>
+						<div class='col-md-6'>
+							<img id='parking-map' src='assets/images/parking-map.png'>
+						</div>
+						<div class='col-md-6'> 
+							<p>Check in will begin at 10 AM in the foyer of the Business Building, located near the corner of Park Avenue and
+								Shortlidge Road. Please have a valid ID!</p>
+							<p>Parking is free for the weekend in the East Parking Deck, a quick stroll from the Business Building and right
+								behind the Berkey Creamery. If you get lost driving through campus, just look for signs for the Creamery, because they are LITERALLY everywhere.</p> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='reimbursement-info'>
+				<div class='container'>
+					<h1>Reimbursement</h1>
+					<p>Reimbursement paperwork will be handled from 8pm-12am in the Business Building lobby. Students traveling by car with at least 1 passenger will be reimbursed $0.29 per mile up to $30. Longer distances will be handled on a case-by-case basis.</p>
+				</div>
 			</div>
 
 
 			<div id='venue-info'>
-				<h1>Venue</h1>
-
-
-
-
-
+				<div class='container'>
+					<h1>Venue</h1>
+				</div>
 			</div>
 
 
@@ -93,10 +108,24 @@
 				<div class='container'>
 					<h1 class='white'>Schedule</h1>
 
+					<div id='timeline'>
+						<div class='time-marker'>| 10 AM
+						</div>
+						<div class='time-marker'>| 12 PM
+						</div>
+						<div class='time-marker'>| 12 AM
+						</div>
+						<div class='time-marker'>| 12 PM
+						</div>
+						<div id='timeline-bar'>
+						</div>
+						
+					</div>
+
 					<div class='row' id='schedule-container'>
 						<div class='col-md-6'>
 							<h4>saturday <span class='yellow'>04/09</span></h4>
-							<table id='saturday' class='schedule'>
+							<table id='day1' class='schedule'>
 								<tr>
 									<td>10:00AM</td>
 									<td>check-in begins</td>
@@ -126,7 +155,7 @@
 						</div>
 						<div class='col-md-6'>
 							<h4>sunday <span class='yellow'>04/10</span></h4>
-							<table id='sunday' class='schedule'>
+							<table id='day2' class='schedule'>
 								<tr>
 									<td>08:30AM</td>
 									<td>breakfast</td>
@@ -159,6 +188,23 @@
 			</div>
 
 
+			<div id='rules'>
+				<h1>Rules</h1>
+			</div>
+
+
+			<div id='prizes'>
+				<div class='container'>
+					<h1>Prizes</h1>
+					<table class="table" id="prize-list">
+						
+					</table>
+
+				</div>
+
+			</div>
+
+
 			<div id='sponsor-information'>
 				<div class='container'>
 					<h1>Sponsors</h1>
@@ -182,9 +228,21 @@
 					</table>
 				</div>
 			</div>
+
+
 			<div id='hardware'>
-				<h1>Hardware</h1>
+				<div class='container'>
+					<h1>Hardware</h1>
+					<p>This is how you get hardware.</p>
+					<h3>Available hardware</h3>
+					<table id='hardware-list-1' class='hardware-list'>
+					</table>
+					<table id='hardware-list-2' class='hardware-list'>
+					</table>
+				</div>
 			</div>
+
+
 			<div id='communication'>
 				<div class='container'>
 					<h1>Communication</h1>
@@ -213,19 +271,9 @@
 					</div>
 				</div>
 			</div>
-			<div id='rules'>
-				<h1>Rules</h1>
-			</div>
-			<div id='prizes'>
-				<div class='container'>
-					<h1>Prizes</h1>
-					<table class="table" id="prize-list">
-						
-					</table>
+			
 
-				</div>
 
-			</div>
 			<div id='submission-info'>
 				<div class='container'>
 					<h1>Submission</h1>
@@ -235,22 +283,23 @@
 					<h3>4. Upload your project and submit it for judging.</h3>
 				</div>
 			</div>
+
+
 			<div id='expo-info'>
 				<div class='container'>
 					<h1>Expo Logistics</h1>
-
-
 					<div id='expo-form'>
-						<h3>1. Register your team <span class="glyphicon glyphicon-play"></span></h3>
+						<h3>1. Register your team. <span class="glyphicon glyphicon-play"></span></h3>
 						<iframe src="https://docs.google.com/forms/d/1wRYpfPyNAMUIjB5XG3moC6FbkM8GxqM39C4yBuW2K1k/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 					</div>
 
-					<h3>2. Check your table</h3>
+					<h3>2. Check your table.</h3>
 					<p>Check <a href="https://docs.google.com/spreadsheets/d/1mwKpeh88YfXYlO5iQWDJ0Xbn3tSCeFKDdO-2CP8d7eo/edit?usp=sharing">this spreadsheet</a> to find which table your team is assigned to.</p>
 
 					<h3>3. Find your table when the expo begins at 1:00 PM.</h3>
 				</div>
 			</div>
+
 			<div id='judges'>
 				<div class='container'>
 					<h1>Judges</h1>
