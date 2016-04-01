@@ -184,5 +184,10 @@ $(document).ready( function() {
 		})
 	})
 
+	$('#easter-egg div').click( function() {
+		$('#an-image').css('display','block');
+		
+	})
+
 
 });

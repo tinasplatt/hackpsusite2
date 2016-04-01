@@ -236,3 +236,34 @@ ol {
 	top:-80px;
 	left:87%;
 }
+
+#easter-egg div {
+	background-color:red;
+	height:5px;
+	width:5px;
+
+
+}
+#easter-egg {
+	z-index: 5000;
+	width:100%;
+	text-align: center;
+	margin:auto;
+}
+#an-image {
+	display:none;
+	z-index: 5000 !important;
+	position:fixed;
+	width:500px;
+	height:500px;
+	background-color: white;
+	text-align: center;
+
+}
+#an-image img{
+	margin:auto;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+	z-index: 5000;
+}
