@@ -1,4 +1,21 @@
+
+
 $(document).ready( function() {
+	if ( $(window).width() < 650 ) {
+		$('#floating').empty().height(50);
+		$( '#timeline' ).empty();
+	}
+
+
+	$( window ).resize(function() {
+		console.log($(window).width());
+		$( '#timeline' ).empty().text('I\'m not responsive :(');
+		if ( $(window).width() < 650 ) {
+			$('#floating').empty().height(50);
+		}
+		
+	});
+
 	$('#expo-form').click( function() {
 		$('iframe').toggle();
 		$('.glyphicon-play').toggleClass('rotated');
@@ -166,4 +183,6 @@ $(document).ready( function() {
 			$(selectorString).toggleClass('selected-event');
 		})
 	})
+
+
 });
