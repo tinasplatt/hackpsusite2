@@ -12,7 +12,7 @@ $( document ).ready(function() {
 
 	if ( isMobile == false ) {
 
-		animations();
+		
 		scrollyDividers();
 		var index=0,count=0, word, words = ['innovate','learn','build','dream','code','create']
 		untype()
@@ -25,6 +25,10 @@ $( document ).ready(function() {
 	    	}
     	);
     	$('.mobile-only').css('display', 'none');
+
+    	setTimeout(function() {
+    		animations();
+    	}, 3000);
 
 	} else {
 

@@ -267,3 +267,12 @@ ol {
     animation:spin 4s linear infinite;
 	z-index: 5000;
 }
+
+#rules-list li {
+	margin:15px;
+	font-size: 20px;
+	line-height: 28px;
+}
+#prize-list td:nth-child(2){
+	width:150px;
+}

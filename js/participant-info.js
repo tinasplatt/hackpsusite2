@@ -36,13 +36,13 @@ $(document).ready( function() {
 	for (var key in sponsors) {
 		var sponsor = sponsors[key];
 	   	var sponsorHTML =
-	   	'<tr><td class="sponsor-list-image"><img src="'
+	   	'<div class="row"><div class="sponsor-list-image col-md-4"><img src="'
 	   	+ sponsor.logo
-	   	+ '"></td><td><h5>' 
+	   	+ '"></div><div class="col-md-8"><h5>' 
 	   	+ sponsor.name 
 	   	+ '</h5><p>'
 	   	+ sponsor.description
-	   	+ '</p></td><</tr>';
+	   	+ '</p></div></div>';
 		   	
 	   	$('#sponsor-list').append(sponsorHTML);
 	}
@@ -68,14 +68,16 @@ $(document).ready( function() {
 		var prize = prizes[key];
 
 	   	var workshopHTML =
-	   	'<tr><td>'
+	   	'<tr><td><span style="font-weight:800">'
 	   	+ prize.name
-	   	+ '<br>'
+	   	+ '</span><br><span class="lightBlue">'
 	   	+ prize.sponsor
-	   	+ '</td><td>'
+	   	+ '</span></td><td>'
 	   	+ prize.value
 	   	+ '</td><td>'
-	   	+ prize.description
+	   	+ prize.requirements
+	   	+ '</td><td>'
+	   	+ prize.judging
 	   	+ '</td></tr>';
 		   	
 	   	$('#prize-list').append(workshopHTML);
