@@ -170,7 +170,7 @@ var Info = { "sponsors":
 			"name":"Programming with Hugo, the modern static site generator<br>Intro to SQL",
 			"location":"104<br>102",
 			"time":"11:30 PM",
-			"instructor":"Kenneth K Au"
+			"instructor":"Kenneth K Au<br>Matt Kremer"
 		}
 	],
 	"prizes":
