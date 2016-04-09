@@ -149,7 +149,7 @@ var Info = { "sponsors":
 			"name":"Django + SQLlite Web Application Development<br>Intro to Android Development", 
 			"location":"102<br>104", 
 			"time":"8:00 PM",
-			"instructor":"Brittany Chiu<br>Audra Starfursky",
+			"instructor":"Brittany Chiu<br>Audra Stafursky",
 			
 		},
 		{
