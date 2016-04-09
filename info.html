@@ -39,12 +39,18 @@
 
 	</head>
 	<body>
+		<div id='floating-top-button'>
+			<a href='#welcome'>
+				<h2>^ top</h2>
+			</a>
+		</div>
 		<section id='easter-egg'>
 			<div></div>
 			<div id='an-image'>
 				<img src="assets/images/easter-egg.png">
 			</div>
 		</section>
+
 		<section id='header'>
 
 			<div id="logo-container">
@@ -63,6 +69,7 @@
 					<h3 id='countdown-text'></h3>
 				</div>
 				<div id='twitter-feed'>
+					<p>Tweet about the event with the hashtag #hackyvalley!</p>
 					<a class="twitter-timeline" href="https://twitter.com/HackPSU" data-widget-id="715636733874819072">Tweets by @HackPSU</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
@@ -93,6 +100,7 @@
 								behind the Berkey Creamery. If you get lost driving through campus, just look for signs for the Creamery, because they are LITERALLY everywhere.</p> 
 						</div>
 					</div>
+					<p>During this time, teams participating in the Club Cup must register at the check-in booth.</p>
 				</div>
 			</div>
 			<div id='reimbursement-info'>
@@ -204,6 +212,17 @@
 				</div>
 			</div>
 
+			<div id='keynote'>
+				<div class='container'>
+					<img src='assets/images/keynotespeaker.png'>
+					<h1>Keynote Speaker: Shawn McCarthy</h1>
+					<p class='lightBlue'>Sr. Leader, Portals and APIs, Vantiv</p>
+					<p>Shawn is a technologist at heart and has been working with computers from age 12 when his father brought home an Osborne (IBM Clone) computer (with a 10 meg disk drive) and started writing basic algorithms to solve algebra equations. His interest in distributed computing expanded when the first Bulletin Board Systems (BBS) systems went online and he was able to communicate with people around the world. Those passions have evolved into the design of a Web API course (he also teaches) and through continued support of the student chapters of the Association for Computing Machinery (ACM) and the Society of Women Engineers (SWE).</p>
+					<p>Shawn is a two-time graduate from the Department of Computer Science and Engineering (CSE) at the University of Colorado. He is passionate about his career and has found a new passion in motivating current students through involvement at both the department and college level. Shawn believes you are given a strong engineering basis in computer science that allows you to think more critically in the large-scale enterprise platforms. This curriculum provided him the confidence and practical knowledge to explore many different platforms and technologies within the enterprise.</p>
+					<p>Shawn joined Vantiv in  2011 and advocates Vantiv's support for IT Interns, and the number of enterprise level systemsacross every technology stack that allow the company to expose payments solutions for stimulating people like you to simplify payments innovation. He hopes to inspire success in current students so they get as much out of their education as he did.</p>
+				</div>
+			</div>
+
 
 			<div id='rules'>
 				<div class='container'>
@@ -262,13 +281,7 @@
 			<div id='workshops'>
 				<div class='container'>
 					<h1>Workshops</h1>
-					<h5>Block 1</h5>
-					<table class="workshop-list table" id="workshop-block-1">
-						
-					</table>
-					<h5>Block 2</h5>
-					<table class="workshop-list table" id="workshop-block-2">
-
+					<table class="workshop-list table" id="workshop-block">
 					</table>
 				</div>
 			</div>
@@ -277,7 +290,7 @@
 			<div id='hardware'>
 				<div class='container'>
 					<h1>Hardware</h1>
-					<p>Hardware rentals are provided by MLH and can be signed out at <a href='hardware.mlh.io'>hardware.mlh.io</a>. Rented items can be picked up in the Atrium. The hardware room will be closed from 2 AM to 8 AM.</p>
+					<p>Hardware rentals are provided by MLH and can be signed out at <a href='http://hardware.mlh.io'>hardware.mlh.io</a>. Rented items can be picked up in the Atrium. The hardware room will be closed from 2 AM to 8 AM.</p>
 					<h3>Available hardware</h3>
 					<table id='hardware-list-1' class='hardware-list'>
 					</table>
@@ -345,7 +358,8 @@
 
 
 					<div id='rubric'>
-						<h3 class='lightestBlue'>Judging Rubric</h3>
+						<h3 class='yellow'>Judging Rubric</h3>
+						<div class='divider' style='background:white'></div>
 						<div id='project-rubric'>
 						</div>
 						<div id='presentation-rubric'>

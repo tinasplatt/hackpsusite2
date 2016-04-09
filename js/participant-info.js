@@ -53,15 +53,16 @@ $(document).ready( function() {
 
 	   	var workshopHTML =
 	   	'<tr><td>'
+	   	+ workshop.time
+	   	+'</td><td>'
 	   	+ workshop.name
 	   	+ '</td><td>'
-	   	+ workshop.location
+	   	+ workshop.instructor
 	   	+ '</td><td>'
-	   	+ workshop.description
+	   	+ workshop.location
 	   	+ '</td></tr>';
-	   	var blockID = '#workshop-block-' + workshop.block;
 		   	
-	   	$(blockID).append(workshopHTML);
+	   	$('#workshop-block').append(workshopHTML);
 	}
 	var prizes = Info["prizes"];
 	for (var key in prizes) {
@@ -87,13 +88,15 @@ $(document).ready( function() {
 	for (var key in judges) {
 			var judge = judges[key];
 		   	var judgeHTML =
-		   	'<tr><td class="sponsor-list-image"><img src="'
+		   	'<div class="row"><div class="sponsor-list-image col-md-4"><div style="background-image:url('
 		   	+ judge.image
-		   	+ '"></td><td><h5>' 
+		   	+ ')"></div></div><div class="col-md-8"><h5>' 
 		   	+ judge.name 
-		   	+ '</h5><p>'
+		   	+ '</h5>'
+		   	+ judge.tagline
+		   	+ '<p class="judge-description">'
 		   	+ judge.description
-		   	+ '</p></td></tr>';
+		   	+ '</p></div></div>';
 			   	
 		   	$('#judges-list').append(judgeHTML);
 	}
@@ -112,6 +115,24 @@ $(document).ready( function() {
 		} else {
 			$('#hardware-list-2').append(itemHTML);
 		}
+	};
+	var rubric = Info["rubric"];
+	for ( var key in rubric ) {
+			var rubricArea = rubric[key]; var questionsHTML = '';
+			console.log
+			for ( var i = 0; i < rubricArea.questions.length; i++ ) {
+				questionsHTML += '<li>' + rubricArea.questions[i] + '</li>';
+			}
+			
+		   
+		   	var rubricHTML =
+		   	'<div><h2>'
+		   	+ rubricArea.criteria
+		   	+ '</h2><ul>'
+		   	+ questionsHTML
+		   	+ '</ul></div>';
+			   	
+		$('#' + rubricArea.type + '-rubric').append(rubricHTML)
 	};
 
 

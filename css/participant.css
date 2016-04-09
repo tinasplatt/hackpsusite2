@@ -44,14 +44,17 @@ ol {
 	background:#2A202F;
 }
 /*========== SPONSOR LIST ===========*/
-#sponsor-list td {
-	text-align: left;
-	padding:10px;
+#sponsor-list > div {
+	margin-top:20px;
 }
 
+#sponsor-list p {
+	padding:0px;
+}
 #sponsor-list h5 {
 	color:black;
 	text-align: left;
+	margin-bottom: 10px
 }
 
 /*========== WORKSHOP LIST ===========*/
@@ -66,6 +69,9 @@ ol {
 	border-bottom:1px solid #999999;
 	font-size: 18px;
 }
+#prize-list td:nth-child(2){
+	width:150px;
+}
 /*========== ARRIVAL ===========*/
 #parking-map {
 	max-width: 100%
@@ -74,13 +80,27 @@ ol {
 	text-align: left;
 }
 /*========== JUDGE LIST ===========*/
-#judges-list td {
+#judges-list h5{
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+#judges-list > div{
 	text-align: left;
 	padding:10px;
+	font-size: 20px;
+	color:#3399CC;
 }
-#judges-list img {
-	width:200px;
+#judges-list .sponsor-list-image > div {
+	width:100%;
+	max-width: 300px;
 	height:200px;
+	background-position: center center;
+	background-size: cover;
+}
+.judge-description {
+	padding:0 !important;
+	margin-top: 10px;
+	color:black;
 }
 /*========== COMMUNICATION ===========*/
 .comm-medium h4 {
@@ -236,7 +256,7 @@ ol {
 	top:-80px;
 	left:87%;
 }
-
+/*============ EASTER EGG ==============*/
 #easter-egg div {
 	background-color:red;
 	height:5px;
@@ -267,12 +287,69 @@ ol {
     animation:spin 4s linear infinite;
 	z-index: 5000;
 }
-
+/*=========== RULE ===========*/
 #rules-list li {
 	margin:15px;
 	font-size: 20px;
 	line-height: 28px;
 }
-#prize-list td:nth-child(2){
-	width:150px;
+
+
+/*=========== RUBRIC ==========*/
+#rubric {
+	background: #2A202F;
+	padding:40px;
+	box-shadow: 10px 10px 5px #cccccc;
+	border-radius: 20px;
+	color:white;
+	margin-top:30px;
+
+}
+#rubric li {
+	list-style: disc;
+	text-align: left;
+	font-size: 16px;
+	padding:5px;
+	margin-left:20px;
+}
+#rubric h2 {
+	margin:10px;
+	margin-top:20px;
+	text-align: left;
+	font-size: 24px;
+	color:#CCFFFF;
+}
+/*========== VENUE ============*/
+#rooms-available p {
+	text-align: left
+}
+#building-map img{
+	width: 400px
+}
+#rooms-available h3 {
+	font-size: 24px;
+	text-align: left;
+}
+/*============ KEYNOTE =============*/
+#keynote img {
+	float:right;
+	padding:0 20px 20px 20px;
+}
+#keynote p {
+	text-align: left;
+	padding:10px 0;
+}
+#keynote h1 {
+	text-align: left
+
+}
+#floating-top-button h2 {
+	margin:0;
+}
+#floating-top-button {
+	position:fixed;
+	float:left;
+	background:#FFCC66;
+	padding:10px;
+
 }

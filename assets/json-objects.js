@@ -120,18 +120,53 @@ var Info = { "sponsors":
 	"workshops":
 	[
 		{
-			"name":"Test 1", 
-			"location":"room 1", 
-			"block":"1",
-			"instructor":"firstname lastname",
-			"description":"gjksadgjkdashgjklasdjgkhdsjakgl"
+			"name":"Introductory to programming with Swift <br>Intro to Java MVC Application Development and Swing", 
+			"location":"106<br>107", 
+			"time":"3:00 PM",
+			"instructor":"Kenneth K Au<br>Binh Hyunh",
+			
 		},
 		{
-			"name":"Test 2", 
-			"location":"room 1", 
-			"block":"1",
-			"instructor":"firstname lastname",
-			"description":"gjksadgjkdashgjklasdjgkhdsjakgl"
+			"name":"Developing with Hugo, a static website engine <br>Intro to SQL Database programming", 
+			"location":"106<br>107", 
+			"time":"4:00 PM",
+			"instructor":"Kenneth K Au<br>Matt Kremer",
+			
+		},
+		{
+			"name":"React-native Development<br>Intro to HTML, CSS, and JS<br>Microsoft Azure Development", 
+			"location":"106<br>107<br>108", 
+			"time":"5:00 PM",
+			"instructor":"Max Marze<br>Scott Miller<br>Alex Patin",
+			
+		},
+		{
+			"name":"Virtual Reality Development with Unity<br>Frontend Development with Bootstrap ", 
+			"location":"106<br>107", 
+			"time":"6:00 PM",
+			"instructor":"Matt Young<br>Spencer McCullough ",
+			
+		},
+		{
+			"name":"Data Science 1<br>Intro to Android Development", 
+			"location":"106<br>107", 
+			"time":"8:00 PM",
+			"instructor":"Chris Sharkey<br>Audra Starfursky",
+			
+		},
+		{
+			"name":"Data Science 2<br>Django + SQLlite Web Application Development", 
+			"location":"106<br>107", 
+			"time":"9:00 PM",
+			"instructor":"Chris Sharkey<br>Brittany Chiu",
+			
+		},
+		{
+			"name":"Data Science 3 <br>iOS + Swift Programming<br>Program Management", 
+			"location":"106<br>107<br>108", 
+			"time":"10:30 PM",
+			"instructor":"Chris Sharkey<br>Emma Roudaboush<br>Ria Bhatia",
+			
 		}
 	],
 	"prizes":
@@ -155,6 +190,13 @@ var Info = { "sponsors":
 			"sponsor":"HackPSU", 
 			"value":"$100 prize per team member",
 			"requirements":"Submit project",
+			"judging":"Judged according to judges rubric in the 'Judging' section"
+		},
+		{
+			"name":"Club Cup", 
+			"sponsor":"HackPSU", 
+			"value":"$500 and pizza party for your club",
+			"requirements":"Register as part of the Club Cup challenge upon check-in, submit project",
 			"judging":"Judged according to judges rubric in the 'Judging' section"
 		},
 		{
@@ -189,7 +231,7 @@ var Info = { "sponsors":
 			"name":"EdTech Challenge", 
 			"sponsor":"Invent Penn State/Penn State EdTech Network/COIL", 
 			"value":"Tickets to the Invent Penn State Venture & Intellectual Property Conference scheduled for Oct. 6-7, 2016 in State College, as well as a one-hour webinar featuring the winning team and their innovative idea as part of the COIL Conversation series.",
-			"requirements":"Think of a challenge that students in higher education face. This could be anything such as an inefficient process, poor communications, roadblocks to learning, etc. Design a technology-based solution that will solve that problem. Be prepared to describe the challenge, as well as your proposed solution.",
+			"requirements":"Think of a challenge that students in higher education face. This could be anything such as an inefficient process, poor communications, roadtimes to learning, etc. Design a technology-based solution that will solve that problem. Be prepared to describe the challenge, as well as your proposed solution.",
 			"judging":"1. Innovation and creativity<br>2. Depth<br>3. ''Wow-factor''"
 		},
 		{
@@ -217,15 +259,99 @@ var Info = { "sponsors":
 	"judges":
 	[		
 		{
-	    	"name":"Dream It", 
-	    	"image":"assets/sponsors/dreamit.png", 
-	    	"description": ""
+	    	"name":"Scott Woods", 
+	    	"image":"assets/judges/scottwoods.png", 
+	    	"tagline":"West Arete, CEO",
+	    	"description": "Adventurer by day and President of West Arete, a successful custom software development company. He has spent his life creating an eco-friendly company that builds sophisticated web and mobile applications for forward thinking companies both locally, in State College, and around the country."
 	    }, 
 	    {
-	    	"name":"Global Entrepreneurship Week at PSU", 
-	    	"image":"assets/sponsors/GEW.jpg", 
-	    	"description": ""
+	    	"name":"Emma Roudabush", 
+	    	"image":"assets/judges/emmaroudabush.png", 
+	    	"tagline":"Intern Ambassador, Microsoft",
+	    	"description": "Microsoft Intern Summer of '13, '14, and '15. Former CodePSU Head Director. Soon-to-be Microsoft Employee in the Developer Division."
+	    },
+		{
+	    	"name":"Justin Merrell", 
+	    	"image":"assets/judges/justinmerrell.png", 
+	    	"tagline":"Director, Catalyst Space ",
+	    	"description": "Justin Merrell is from Gaithersburg Maryland where his passion for technology and business began. Attending Penn State Altoona for engineering and business he saw an opportunity to bring STEM and entrepreneurship to the area, resulting in Catalyst Space. In the process he developed an access management system that grew into a technology company of its own."
 	    }
+
+	],
+	"rubric":
+	[		
+		{
+	    	"type":"project", 
+	    	"criteria":"Creativity and originality (10 points)", 
+	    	"questions":
+	    	[
+	    		"Is the solution novel, original and not-obvious?",
+	    		"How different is the design from current solutions?",
+	    		"Does it approach the problem from an unusual or different perspective?",
+	    		"How creative is the problem statement?",
+	    		"Does the solution address a problem which is novel, original and not-obvious?"
+	    	]
+	    }, 		
+	    {
+	    	"type":"project", 
+	    	"criteria":"Technical Skills (5 points)", 
+	    	"questions":
+	    	[    		
+	    		"Was the solution technically challenging? (Taking into account team size and measured relative to competition)",
+	    		"How intricate was the solution?",
+	    		"Did the solution pose a challenge to the group?"
+	    	]
+	    }, 
+	    {
+	    	"type":"project", 
+	    	"criteria":"Implementation (15 points)", 
+	    	"questions":
+	    	[
+	    		"Was the solution effective in addressing the problem?",
+	    		"Was the solution easy to operate for the target demographic? (user friendliness)",
+	    		"Is the solution needlessly complex?",
+	    		"Overall, is the solution viable in addressing the problem statement?"
+	    	]
+	    }, 
+	    {
+	    	"type":"presentation", 
+	    	"criteria":"Clarity (3 points)", 
+	    	"questions":
+	    	[
+	    		"Was the team able to convey their ideas in a way understandable to the audience?",
+	    		"Were the topics accessible to the audience?",
+	    		"Were all obscure acronyms or jargon explained?"
+	    	]
+	    }, 		
+	    {
+	    	"type":"presentation", 
+	    	"criteria":"Organization (3 points)", 
+	    	"questions":
+	    	[
+	    		"Did the presentation follow a logical flow?",
+	    		"Was the stricture of the presentation appropriate for the content?"
+	    	]
+	    }, 
+	    {
+	    	"type":"presentation", 
+	    	"criteria":"Participation (2 points)", 
+	    	"questions":
+	    	[
+	    		"Did all team members participate in the conversation?",
+	    		"How were transitions handled?",
+	    		"Did the team act as a unit or was contribution mostly individual?"
+	    	]
+	    }, 
+	    {
+	    	"type":"presentation", 
+	    	"criteria":"Knowledge (12 points", 
+	    	"questions":
+	    	[
+	    		"How effectively did the team handle questions?",
+	    		"Did the team demonstrate knowledge of the subject matter?"
+	    	]
+	    }
+
 
 	],
 	"hardware":
