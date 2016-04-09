@@ -121,49 +121,49 @@ var Info = { "sponsors":
 	[
 		{
 			"name":"Introductory to programming with Swift <br>Intro to Java MVC Application Development and Swing", 
-			"location":"106<br>107", 
+			"location":"102<br>104", 
 			"time":"3:00 PM",
 			"instructor":"Kenneth K Au<br>Binh Hyunh",
 			
 		},
 		{
 			"name":"Developing with Hugo, a static website engine <br>Intro to SQL Database programming", 
-			"location":"106<br>107", 
+			"location":"102<br>104", 
 			"time":"4:00 PM",
 			"instructor":"Kenneth K Au<br>Matt Kremer",
 			
 		},
 		{
 			"name":"React-native Development<br>Intro to HTML, CSS, and JS<br>Microsoft Azure Development", 
-			"location":"106<br>107<br>108", 
+			"location":"102<br>104<br>110", 
 			"time":"5:00 PM",
 			"instructor":"Max Marze<br>Scott Miller<br>Alex Patin",
 			
 		},
 		{
 			"name":"Virtual Reality Development with Unity<br>Frontend Development with Bootstrap ", 
-			"location":"106<br>107", 
+			"location":"102<br>104", 
 			"time":"6:00 PM",
 			"instructor":"Matt Young<br>Spencer McCullough ",
 			
 		},
 		{
 			"name":"Data Science 1<br>Intro to Android Development", 
-			"location":"106<br>107", 
+			"location":"102<br>104", 
 			"time":"8:00 PM",
 			"instructor":"Chris Sharkey<br>Audra Starfursky",
 			
 		},
 		{
 			"name":"Data Science 2<br>Django + SQLlite Web Application Development", 
-			"location":"106<br>107", 
+			"location":"102<br>104", 
 			"time":"9:00 PM",
 			"instructor":"Chris Sharkey<br>Brittany Chiu",
 			
 		},
 		{
 			"name":"Data Science 3 <br>iOS + Swift Programming<br>Program Management", 
-			"location":"106<br>107<br>108", 
+			"location":"102<br>104<br>110", 
 			"time":"10:30 PM",
 			"instructor":"Chris Sharkey<br>Emma Roudaboush<br>Ria Bhatia",
 			
@@ -228,6 +228,13 @@ var Info = { "sponsors":
 			"judging":"As judged by Major League Hacking"
 		},
 		{
+			"name":"Best use of Vantiv API", 
+			"sponsor":"Vantiv", 
+			"value":"Roundtrip airface to Las Vegas for 2016 Money 20/20 Hackathon, Entrance fee paid for each team member, Vantiv Five for Flight t-shirt,$200 Vantiv MasterCard promotional card for miscellaneous travel costs (food, transportation, etc.)",
+			"requirements":"Best use of API.",
+			"judging":"Decided by Vantiv."
+		},		
+		{
 			"name":"Best app for IT recruiters OR Best app for IT job seekers", 
 			"sponsor":"TechHiring", 
 			"value":"Amazon Gift Card",
@@ -279,7 +286,7 @@ var Info = { "sponsors":
 		{
 			"name":"Hack Harassment Challenge", 
 			"sponsor":"Hack Harassment (Intel Corp., Vox Media, Born This Way Foundation, and Re/Code)", 
-			"value":"LabVIEW Physical Computing Kit with chipKIT WF32",
+			"value":"Each team member (up to 5) will be awarded a Fossil Q Reveler Black Leather Activity Tracker (value $125 each)",
 			"requirements":"Help create a solution that will allow us to capture social interactions, identify and tag if it's harassment.  You can start from existing available data sources and APIs, but a solution must be scalable across many online applications and can be tested to identify Harassment or not through unique and innovative algorithms. <a href='challenge.html'>More info here</a>",
 			"judging":"(1) Is the tool scalable? <br>(2) Is the data set easily tagged, searched? <br>(3) Is it accurate? "
 		},

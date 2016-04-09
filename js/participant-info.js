@@ -179,7 +179,7 @@ $(document).ready( function() {
 		},1000);	
 	}
 
-	eventTimes = [0,2,3,6,9,14,22.5,26,27,27.5,28.5,30];
+	eventTimes = [0,2,3,5,9,14,22.5,26,27,27.5,28.5,30];
 	for (var i=0; i<12; i++) {
 		console.log($('#timeline-bar').width());
 		distance = (eventTimes[i]/30 * $('#timeline-bar').width()) - 15;
