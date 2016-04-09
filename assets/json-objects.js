@@ -169,7 +169,7 @@ var Info = { "sponsors":
 		{
 			"name":"Swift Programming",
 			"location":"104",
-			"time":"11:30",
+			"time":"11:30PM",
 			"instructor":"Kenneth K Au"
 		}
 	],
