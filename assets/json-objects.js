@@ -200,6 +200,34 @@ var Info = { "sponsors":
 			"judging":"Judged according to judges rubric in the 'Judging' section"
 		},
 		{
+			"name":"First place", 
+			"sponsor":"MLH", 
+			"value":"Dell venue 10 tablets",
+			"requirements":"Submit project",
+			"judging":"As judged by Major League Hacking"
+		},
+		{
+			"name":"Best use of AWS", 
+			"sponsor":"MLH", 
+			"value":"1TB hard drive",
+			"requirements":"Submit project",
+			"judging":"As judged by Major League Hacking"
+		},
+		{
+			"name":"Best domain.com", 
+			"sponsor":"MLH", 
+			"value":"domain.com swag bag",
+			"requirements":"Submit project",
+			"judging":"As judged by Major League Hacking"
+		},
+		{
+			"name":"Best developer tool", 
+			"sponsor":"MLH", 
+			"value":"Mona the Octocat statue",
+			"requirements":"Submit project",
+			"judging":"As judged by Major League Hacking"
+		},
+		{
 			"name":"Best app for IT recruiters OR Best app for IT job seekers", 
 			"sponsor":"TechHiring", 
 			"value":"Amazon Gift Card",
