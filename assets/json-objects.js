@@ -120,18 +120,16 @@ var Info = { "sponsors":
 	"workshops":
 	[
 		{
-			"name":"Introductory to programming with Swift <br>Intro to Java MVC Application Development and Swing", 
+			"name":"Programming with Hugo, the Static site engine<br>Intro to Java MVC Application Development and Swing", 
 			"location":"102<br>104", 
 			"time":"3:00 PM",
 			"instructor":"Kenneth K Au<br>Binh Hyunh",
-			
 		},
 		{
-			"name":"Developing with Hugo, a static website engine <br>Intro to SQL Database programming", 
-			"location":"102<br>104", 
+			"name":"Vantiv Keynote", 
+			"location":"110",
 			"time":"4:00 PM",
-			"instructor":"Kenneth K Au<br>Matt Kremer",
-			
+			"instructor":"Shawn McCarthy",
 		},
 		{
 			"name":"React-native Development<br>Intro to HTML, CSS, and JS<br>Microsoft Azure Development", 
@@ -148,25 +146,31 @@ var Info = { "sponsors":
 			
 		},
 		{
-			"name":"Data Science 1<br>Intro to Android Development", 
+			"name":"Django + SQLlite Web Application Development<br>Intro to Android Development", 
 			"location":"102<br>104", 
 			"time":"8:00 PM",
 			"instructor":"Chris Sharkey<br>Audra Starfursky",
 			
 		},
 		{
-			"name":"Data Science 2<br>Django + SQLlite Web Application Development", 
-			"location":"102<br>104", 
+			"name":"Data Science 1", 
+			"location":"110", 
 			"time":"9:00 PM",
-			"instructor":"Chris Sharkey<br>Brittany Chiu",
+			"instructor":"Chris Sharkey",
 			
 		},
 		{
-			"name":"Data Science 3 <br>iOS + Swift Programming<br>Program Management", 
-			"location":"102<br>104<br>110", 
+			"name":"Data Science 2<br>iOS + Swift Programming", 
+			"location":"110<br>104", 
 			"time":"10:30 PM",
-			"instructor":"Chris Sharkey<br>Emma Roudaboush<br>Ria Bhatia",
+			"instructor":"Chris Sharkey<br>Emma Roudaboush",
 			
+		},
+		{
+			"name":"Swift Programming",
+			"location":"104",
+			"time":"11:30"
+			"instructor":"Kenneth K Au"
 		}
 	],
 	"prizes":
