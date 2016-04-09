@@ -138,7 +138,7 @@ $(document).ready( function() {
 
 	currentTime = (new Date().getTime())/1000;
 	startTime = 1460217600;
-	endTime = 1460250000;
+	endTime = 1460307600;
 
 	if ( currentTime < startTime) {
 		$('#countdown-text').text('until hackpsu!')
