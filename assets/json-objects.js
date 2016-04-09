@@ -120,7 +120,7 @@ var Info = { "sponsors":
 	"workshops":
 	[
 		{
-			"name":"Programming with Hugo, the Static site engine<br>Intro to Java MVC Application Development and Swing", 
+			"name":"Intro to Swift<br>Intro to Java MVC Application Development and Swing", 
 			"location":"102<br>104", 
 			"time":"3:00 PM",
 			"instructor":"Kenneth K Au<br>Binh Hyunh",
@@ -167,7 +167,7 @@ var Info = { "sponsors":
 			
 		},
 		{
-			"name":"Swift Programming",
+			"name":"Programming with Hugo, the modern static site generator",
 			"location":"104",
 			"time":"11:30 PM",
 			"instructor":"Kenneth K Au"
