@@ -119,7 +119,6 @@ $(document).ready( function() {
 	var rubric = Info["rubric"];
 	for ( var key in rubric ) {
 			var rubricArea = rubric[key]; var questionsHTML = '';
-			console.log
 			for ( var i = 0; i < rubricArea.questions.length; i++ ) {
 				questionsHTML += '<li>' + rubricArea.questions[i] + '</li>';
 			}
